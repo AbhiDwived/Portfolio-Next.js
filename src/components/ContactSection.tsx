@@ -17,11 +17,11 @@ const ScrollReveal = ({ children, className = "", delay = 0 }: { children: React
 };
 
 const contactInfo = [
-  { icon: "📧", label: "Email", value: "abhidwivedi687@gmail.com" },
-  { icon: "📱", label: "Phone", value: "+91 84332 08146" },
-  { icon: "🐙", label: "GitHub", value: "github.com/AbhiDwived" },
-  { icon: "💼", label: "LinkedIn", value: "linkedin.com/in/abhinan" },
-  { icon: "📍", label: "Location", value: "India 🇮🇳 · Available Globally" },
+  { icon: "📧", label: "Email", value: "abhidwivedi687@gmail.com", href: "mailto:abhidwivedi687@gmail.com" },
+  { icon: "📱", label: "Phone", value: "+91 84332 08146", href: "tel:+918433208146" },
+  { icon: "🐙", label: "GitHub", value: "github.com/AbhiDwived", href: "https://github.com/AbhiDwived" },
+  { icon: "💼", label: "LinkedIn", value: "linkedin.com/in/abhinan", href: "https://www.linkedin.com/in/abhinan/" },
+  { icon: "📍", label: "Location", value: "Sector 49, Noida, Uttar Pradesh, India" },
 ];
 
 const ContactSection = () => {
@@ -50,7 +50,7 @@ const ContactSection = () => {
           <ScrollReveal>
             <div className="flex flex-col gap-4">
               {contactInfo.map((c, i) => (
-                <div key={c.label} className="flex items-center gap-4 glass rounded-xl p-4 hover:border-primary/30 hover:translate-x-1.5 transition-all duration-300 magnetic-hover" style={{ animationDelay: `${i * 100}ms` }}>
+                <a key={c.label} href={(c as any).href ?? undefined} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 glass rounded-xl p-4 hover:border-primary/30 hover:translate-x-1.5 transition-all duration-300 magnetic-hover" style={{ animationDelay: `${i * 100}ms` }}>
                   <div className="w-11 h-11 rounded-xl bg-primary/10 border border-primary/15 flex items-center justify-center text-lg flex-shrink-0">
                     {c.icon}
                   </div>
@@ -58,7 +58,7 @@ const ContactSection = () => {
                     <div className="text-[0.7rem] text-text3 uppercase tracking-wider font-bold">{c.label}</div>
                     <div className="text-sm font-semibold mt-0.5">{c.value}</div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </ScrollReveal>

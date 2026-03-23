@@ -51,10 +51,7 @@ const skillGroups = [
     name: "Database",
     skills: [
       { name: "MongoDB", logo: `${cdnBase}/mongodb/mongodb-original.svg` },
-      { name: "PostgreSQL", logo: `${cdnBase}/postgresql/postgresql-original.svg` },
       { name: "MySQL", logo: `${cdnBase}/mysql/mysql-original.svg` },
-      { name: "Redis", logo: `${cdnBase}/redis/redis-original.svg` },
-      { name: "Mongoose", logo: `${cdnBase}/mongoose/mongoose-original.svg` },
     ],
   },
   {
