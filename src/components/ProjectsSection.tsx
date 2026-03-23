@@ -50,7 +50,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="py-28 px-6 lg:px-12 relative z-10">
       <div className="absolute inset-0 mesh-gradient pointer-events-none" />
-      <div className="max-w-[1280px] mx-auto relative">
+      <div className="relative">
         <ScrollReveal>
           <div className="font-mono text-xs tracking-[0.12em] uppercase text-primary mb-4">
             <span className="text-text3">// </span>Portfolio

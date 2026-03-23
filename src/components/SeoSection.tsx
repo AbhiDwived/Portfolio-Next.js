@@ -29,7 +29,7 @@ const seoCards = [
 
 const SeoSection = () => (
   <section className="py-28 px-6 lg:px-12 relative z-10 bg-card/50 noise-overlay">
-    <div className="max-w-[1280px] mx-auto relative z-10">
+    <div className="relative z-10">
       <ScrollReveal>
         <div className="font-mono text-xs tracking-[0.12em] uppercase text-primary mb-4">
           <span className="text-text3">// </span>SEO Expertise

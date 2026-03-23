@@ -33,7 +33,7 @@ const HeroSection = () => {
       {/* Mesh gradient overlay */}
       <div className="absolute inset-0 mesh-gradient pointer-events-none" />
 
-      <div className="grid lg:grid-cols-2 gap-16 items-center max-w-[1280px] mx-auto w-full relative">
+      <div className="grid lg:grid-cols-2 gap-16 items-center w-full relative">
         {/* Left */}
         <div>
           <div className="animate-fade-down inline-flex items-center gap-2.5 font-mono text-xs text-text2 glass px-4 py-1.5 rounded-md mb-8">
